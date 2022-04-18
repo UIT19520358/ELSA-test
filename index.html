@@ -20,7 +20,7 @@
                 <h1>APP LUYỆN NÓI<br /> & GIAO TIẾP TIẾNG ANH THỜI 4.0</h1>
                 <h3>Với ELSA Speak - Ai Cũng Có Thể Nói Tiếng Anh Hay!</h3>
                 <div class="btn__register">
-                    <button>Đăng ký ngay</button>
+                    <a href="#fname">Đăng ký ngay</a>
                 </div>
         </div>
         <div class="section1__logo">
@@ -36,27 +36,51 @@
         <div class="section2__form">
             <div class="section2__form-wrapper">
                 <p class="section2__title">CÙNG ỨNG DỤNG ELSA <br> NÓI TIẾNG ANH “THẢ GA”</p>
-                <form action="" style="background-color: #fff;">
-                    <label for="name">
+                <form action="">
+                    <label class="section2__form-label" for="name">
                         <img src="img/ic_name.png" alt="">
-                        Họ tên *
-                    </label>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label for="name">
+                        &nbsp;Họ tên *
+                    </label> <br>
+                    <input onclick="this.value=''; this.style.color='#06BAE8'" class="section2__form-input" type="text" id="fname" name="fname"><br><br>
+                    <label class="section2__form-label" for="name">
                         <img src="img/ic_phone.png" alt="">
-                        Số điện thoại *
-                    </label>
-                    <input type="text" id="fname" name="fname" required><br><br>
-                    <label for="name">
+                        &nbsp;Số điện thoại *
+                    </label> <br>
+                    <input class="section2__form-input" type="text" id="fname" name="fname" required><br><br>
+                    <label class="section2__form-label" for="name">
                         <img src="img/ic_email.png" alt="">
-                        Email *
-                    </label>
-                    <input type="text" id="fname" name="fname" required><br><br>
-                    <input class="" type="submit" value="GỬI ĐĂNG KÝ">
+                        &nbsp;Email *
+                    </label> <br>
+                    <input class="section2__form-input" type="text" id="fname" name="fname" required><br><br>
+                    <div class="section2__form-course" style="position: relative;">
+                        <div style="position: absolute; left: 0;">
+                            <input class="section2__form-check" type="checkbox" name="check" onclick="onlyOne(this)">
+                            <label for="">&nbsp;Gói học 1 năm</label>
+                        </div>
+                        <div style="position: absolute; right: 0;">
+                            <input class="section2__form-check" type="checkbox" name="check" onclick="onlyOne(this)">
+                            <label for="">&nbsp;Gói trọn đời</label>
+                        </div>
+                    </div> 
+                    <br><br><br><br>
+                    <input class="section2__form-submit" type="submit" value="GỬI ĐĂNG KÝ">
                 </form>
             </div>
         </div>
         <div class="section2__logo"></div>
     </div>
+    <script type="text/javascript">
+        function onlyOne(checkbox) {
+        var checkboxes = document.getElementsByName('check')
+        checkboxes.forEach((item) => {
+            if (item !== checkbox) item.checked = false
+        })
+    }
+        document.getElementsByClassName("section2__form-input").onclick = function() {
+        this.value = '';
+        this.style.color = '#06BAE8';
+    }
+    </script>
 </body>
+
 </html>

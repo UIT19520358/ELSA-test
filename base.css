@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+   }
 .header {
     display: flex;
     align-items: center;
@@ -32,8 +37,6 @@
     justify-content: center;
 }
 .section1__content h1{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 56px;
@@ -41,8 +44,6 @@
     color: #0C2440;
 }
 .section1__content h3{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 25px;
     line-height: 33px;
@@ -55,7 +56,7 @@
     min-width: 274px;
     margin: 24px 0;
 }
-.section1__content .btn__register button{
+.section1__content .btn__register a{
     width: 100%;
     background: linear-gradient(80.25deg, #3DFFC8 1.31%, #40F6CF 15.32%, #49DCE1 38.61%, #57B3FF 68.19%);
     box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
@@ -64,13 +65,12 @@
     outline: none;
     border: none;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 42px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 .section1__logo{
     position: relative;
@@ -91,23 +91,21 @@
     background-color: #0C2440; 
     height: 830px;
 }
-
 .section2__title{
-    font-family: 'BrownVN';
-    font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 49px;
     color: #fff;
     text-align: center;
-    background: linear-gradient(80.25deg, #3DFFC8 1.31%, #40F6CF 15.32%, #49DCE1 38.61%, #57B3FF 68.19%);
+    background: linear-gradient(81.84deg, #49DCE1 1.09%, #39A3FB 96.86%);
     box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
     margin: 0;
     padding: 18px 16px;
-}
-.section2__form{
+    box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+    border-radius: 15px 15px 0px 0px;
 }
 .section2__form-wrapper{
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -115,4 +113,53 @@
     height: 702px; 
     width: 600px;
     overflow: hidden;
+}
+.section2__form-wrapper form{
+    position: relative;;
+    background-color: #fff;
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+}
+.section2__form-wrapper form label{
+    font-size: 25px;
+}
+.section2__form-label{
+    text-align: center;
+    top: 50%;
+    color: #06BAE8;
+}
+.section2__form-input{
+    height: 60px;
+    width: 100%;
+    border-color: #06BAE8;
+}
+.section2__form-course {
+    display: flex;
+    justify-content: space-around;
+}
+.section2__form-check{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    color: #06BAE8;
+    font-size: 25px;
+}
+.section2__form-submit{
+    width: 100%;
+    background: linear-gradient(80.25deg, #3DFFC8 1.31%, #40F6CF 15.32%, #49DCE1 38.61%, #57B3FF 68.19%);
+    box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
+    border-radius: 20px;
+    padding: 16px 24px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+}
+.section2__logo{
+    position: relative;
 }
