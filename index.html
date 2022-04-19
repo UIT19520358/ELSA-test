@@ -5,81 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELSA</title>
-    <link rel="favicon" href="/img/logo.ico"/>
+    <link rel="shortcut icon" type="image/png" href="/img/Logo.png"/>
     <link rel="stylesheet" href="./base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="header">
-        <img src="/img/header.png" alt="ELSA SPEAK">
-    </div>
-    <div class="section1">
-        <img src="./img/Vector1.svg" alt="" class="vector1">
-        <div class="section1__content">
-                <h1>APP LUYỆN NÓI<br /> & GIAO TIẾP TIẾNG ANH THỜI 4.0</h1>
-                <h3>Với ELSA Speak - Ai Cũng Có Thể Nói Tiếng Anh Hay!</h3>
+    <div class="container">
+        <div class="header">
+            <img src="/img/header.png" alt="ELSA SPEAK">
+        </div>
+        <!-- SECTION 1 -->
+        <div class="section1">
+            <!-- LEFT COLUMN -->
+            <img src="./img/Vector1.svg" alt="" class="vector1">
+            <div class="section1__content">
+                    <h1>APP LUYỆN NÓI<br /> & GIAO TIẾP TIẾNG ANH THỜI 4.0</h1>
+                    <h3>Với ELSA Speak - Ai Cũng Có Thể Nói Tiếng Anh Hay!</h3>
+                    <div class="btn__register">
+                        <a href="#fname">Đăng ký ngay</a>
+                    </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="section1__logo">
+                <div class="section1__logo-background">
+                    <img src="./img/Frame.png" alt="">
+                </div>
+                    <img src="./img/Phone 13 1.png" alt="" class="phone__img">
+            </div>
+            <img src="./img/Vector2.svg" alt="" class="vector2">
+        </div>
+        <!-- SECTION 1 -->
+
+        <!-- SECTION 2 -->
+        <div class="section2">
+            <div></div> <!-- EMPTY COLUMN + LEFT COLUMN -->
+            <!-- MIDDLE COLUMN -->
+            <div class="section2__form">
+                <div class="section2__form-wrapper">
+                    <p class="section2__title">CÙNG ỨNG DỤNG ELSA <br> NÓI TIẾNG ANH “THẢ GA”</p>
+                    <form action="">
+                        <label class="section2__form-label" for="name">
+                            <img src="img/ic_name.png" alt="">
+                            &nbsp;Họ tên *
+                        </label> <br>
+                        <input class="section2__form-input" type="text" id="fname" name="fname"><br><br>
+                        <label class="section2__form-label" for="name">
+                            <img src="img/ic_phone.png" alt="">
+                            &nbsp;Số điện thoại *
+                        </label> <br>
+                        <input class="section2__form-input" type="text" id="fname" name="fname" required><br><br>
+                        <label class="section2__form-label" for="name">
+                            <img src="img/ic_email.png" alt="">
+                            &nbsp;Email *
+                        </label> <br>
+                        <input class="section2__form-input" type="text" id="fname" name="fname" required><br><br>
+                        <div class="section2__form-course">
+                            <div class="section2__form-checkbox">
+                                    <input id="one-year-course-check" class="section2__form-check" type="checkbox" name="check" onclick="onlyOne(this)">
+                                    <label id="one-year-course">&nbsp;Gói học 1 năm</label>
+                            </div>
+                            <div class="section2__form-checkbox">
+                                    <input id="forever-course-check" class="section2__form-check" type="checkbox" name="check" onclick="onlyOne(this)">                                
+                                    <label id="forever-course">&nbsp;Gói trọn đời</label>
+                            </div>
+                        </div> 
+                        <br><br><br><br>
+                        <input class="section2__form-submit" type="submit" value="GỬI ĐĂNG KÝ">
+                    </form>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="section2__logo">
+                <div>
+                    <img class="vector3" src="./img/Vector3.svg" alt="">
+                    <img class="vector4" src="img/Vector4.svg" alt="">
+                    <img class="vector5" src="img/Vector5.svg" alt="">
+                    <img class="vector6" src="img/Vector6.svg" alt="">
+                    <img class="vector7" src="img/Vector7.svg" alt="">
+                    <img class="phone1__img" src="/img/Phone 15 1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 2 -->
+
+        <!-- SECTION 3 -->
+        <div class="section3">
+            <h1>CÁ NHÂN HÓA LỘ TRÌNH HỌC</h1>
+            <h2>Làm bài kiểm tra đầu vào với ELSA trong 5 phút và bạn sẽ có:</h2>
+            <div class="section3__container">
+                <div>
+                    <img src="img/pic1.jpg" alt="">
+                    <p>Trí tuệ nhân tạo trả về bạn số điểm
+                        <span>"CHUẨN BẢN XỨ"</span>.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/pic2.jpg" alt="">
+                    <p>
+                        <span>NGAY LẬP TỨC</span>
+                        , bạn biết mình phát âm sai ở đâu qua những gam màu trực quan sinh động.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/pic3.jpg" alt="">
+                    <p>
+                        <span>CÔNG NGHỆ NHẬN DIỆN</span>
+                        giọng nói chuẩn đến từng âm tiết.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/pic4.jpg" alt="">
+                    <p>
+                        ELSA sẽ
+                        <span>LẬP LỘ TRÌNH HỌC CÁ NHÂN HÓA</span>
+                        dựa trên các chỉ số bài kiểm tra đầu vào của bạn.
+                    </p>
+                </div>
+            </div>
+            <div class="btn__container">
+                <div></div>
                 <div class="btn__register">
                     <a href="#fname">Đăng ký ngay</a>
                 </div>
-        </div>
-        <div class="section1__logo">
-            <div class="section1__logo-background">
-                <img src="./img/Frame.png" alt="">
-            </div>
-                <img src="./img/Phone 13 1.png" alt="" class="phone__img">
-        </div>
-        <img src="./img/Vector2.svg" alt="" class="vector2">
-    </div>
-    <div class="section2">
-        <div></div>
-        <div class="section2__form">
-            <div class="section2__form-wrapper">
-                <p class="section2__title">CÙNG ỨNG DỤNG ELSA <br> NÓI TIẾNG ANH “THẢ GA”</p>
-                <form action="">
-                    <label class="section2__form-label" for="name">
-                        <img src="img/ic_name.png" alt="">
-                        &nbsp;Họ tên *
-                    </label> <br>
-                    <input onclick="this.value=''; this.style.color='#06BAE8'" class="section2__form-input" type="text" id="fname" name="fname"><br><br>
-                    <label class="section2__form-label" for="name">
-                        <img src="img/ic_phone.png" alt="">
-                        &nbsp;Số điện thoại *
-                    </label> <br>
-                    <input class="section2__form-input" type="text" id="fname" name="fname" required><br><br>
-                    <label class="section2__form-label" for="name">
-                        <img src="img/ic_email.png" alt="">
-                        &nbsp;Email *
-                    </label> <br>
-                    <input class="section2__form-input" type="text" id="fname" name="fname" required><br><br>
-                    <div class="section2__form-course" style="position: relative;">
-                        <div style="position: absolute; left: 0;">
-                            <input class="section2__form-check" type="checkbox" name="check" onclick="onlyOne(this)">
-                            <label for="">&nbsp;Gói học 1 năm</label>
-                        </div>
-                        <div style="position: absolute; right: 0;">
-                            <input class="section2__form-check" type="checkbox" name="check" onclick="onlyOne(this)">
-                            <label for="">&nbsp;Gói trọn đời</label>
-                        </div>
-                    </div> 
-                    <br><br><br><br>
-                    <input class="section2__form-submit" type="submit" value="GỬI ĐĂNG KÝ">
-                </form>
+                <div></div>
             </div>
         </div>
-        <div class="section2__logo"></div>
+        <!-- SECTION 3 -->
     </div>
+
+    <!-- iPhone 11 Pro Max -->
+    <div class="iPhone" style="display: none;">
+        <div class="iPhone__container">
+            <img src="/img/Frame.png" alt="" class="iPhone__container-background">
+            <img src="/img/Phone 11 1.png" alt="" class="phone2__img">
+        </div>
+    </div>
+
     <script type="text/javascript">
-        function onlyOne(checkbox) {
+
+    function onlyOne(checkbox) {
         var checkboxes = document.getElementsByName('check')
         checkboxes.forEach((item) => {
             if (item !== checkbox) item.checked = false
         })
+        if(document.getElementById('one-year-course-check').checked) {
+            let lbl = document.getElementById("one-year-course");
+            lbl.innerText='Gói học 1 năm:\n989.000 VND';
+            let lbl1 = document.getElementById("forever-course");
+            lbl1.innerText='Gói trọn đời';
+        } else if(document.getElementById('forever-course-check').checked) {
+            let lbl = document.getElementById("forever-course");
+            lbl.innerText='Gói trọn đời:\n1.995.000 VND';
+            let lbl1 = document.getElementById("one-year-course");
+            lbl1.innerText='Gói học 1 năm';
+        } else{
+            let lbl = document.getElementById("forever-course");
+            lbl.innerText='Gói trọn đời';
+            let lbl1 = document.getElementById("one-year-course");
+            lbl1.innerText='Gói học 1 năm';
+        } 
     }
-        document.getElementsByClassName("section2__form-input").onclick = function() {
-        this.value = '';
-        this.style.color = '#06BAE8';
-    }
+
     </script>
 </body>
 

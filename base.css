@@ -2,7 +2,8 @@ html {
     scroll-behavior: smooth;    
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-   }
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -52,11 +53,11 @@ html {
     color: #06BAE8;
     margin: 0;
 }
-.section1__content .btn__register{
+.btn__register{
     min-width: 274px;
     margin: 24px 0;
 }
-.section1__content .btn__register a{
+.btn__register a{
     width: 100%;
     background: linear-gradient(80.25deg, #3DFFC8 1.31%, #40F6CF 15.32%, #49DCE1 38.61%, #57B3FF 68.19%);
     box-shadow: 0px 4px 8px rgba(46, 153, 241, 0.5);
@@ -85,11 +86,10 @@ html {
     left: 5%;
 }
 /* SECTION 2 */
-.section2{
+.section2{    
     display: grid;
     grid-template-columns: 10% 40% 50%;
-    background-color: #0C2440; 
-    height: 830px;
+    background-color: #0C2440;
 }
 .section2__title{
     font-weight: 700;
@@ -105,13 +105,11 @@ html {
     border-radius: 15px 15px 0px 0px;
 }
 .section2__form-wrapper{
-    margin-top: 60px;
+    margin: 30px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     border-radius: 20px;
-    height: 702px; 
-    width: 600px;
     overflow: hidden;
 }
 .section2__form-wrapper form{
@@ -120,6 +118,20 @@ html {
     margin: 20px;
     display: inline-block;
     text-align: left;
+}
+.section2__form-course{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    
+}
+.section2__form-checkbox{
+    position: relative;
+}
+.section2__form-checkbox input label{
+    position: absolute;
+    left: 0;
 }
 .section2__form-wrapper form label{
     font-size: 25px;
@@ -130,13 +142,13 @@ html {
     color: #06BAE8;
 }
 .section2__form-input{
+    font-size: 26px;
     height: 60px;
     width: 100%;
     border-color: #06BAE8;
 }
 .section2__form-course {
     display: flex;
-    justify-content: space-around;
 }
 .section2__form-check{
     margin-top: 10px;
@@ -162,4 +174,100 @@ html {
 }
 .section2__logo{
     position: relative;
+}
+.vector3{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateY(-70%);
+}
+.phone1__img{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+.vector4{
+    position: absolute;
+    top: 19%;
+    left: 53%;
+}
+.vector5{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+.vector6{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+.vector7{
+    position: absolute;
+    top: 60%;
+    left: 72%;
+}
+/* SECTION 3 */
+.section3{
+    position: relative;
+}
+.section3 h1{
+    text-align: center;
+    color: #606060;
+}
+.section3 h2{
+    text-align: center;
+    color: #999999;
+}
+.section3__container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.section3__container span{
+    font-weight: 500;
+    color: #22BFE8;
+}
+.section3__container p{
+    margin: 30px;
+    text-align: justify;
+}
+.section3 .btn__container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-content: space-around;
+}
+.section3 .btn__register{
+    position: relative;
+}
+.section3 .btn__register a{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* RESPONSIVE */
+@media only screen and (min-width: 1242px) and (min-height: 2688px){
+    .container{
+        display: none;
+    }
+    .iPhone{
+        display: inline !important;
+    }
+    .iPhone__container{
+        position: relative;
+    }
+    .iPhone__container-background{
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 35%;
+    }
+    .phone2__img{
+        position: absolute;
+        margin-top: 35%;
+        margin-left: 42.5%;
+    }
 }
